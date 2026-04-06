@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://127.0.0.1:8000";
+const BACKEND_URL = "https://iris-backend-production-bfcd.up.railway.app";
 
 function randomGenerate() {
 
