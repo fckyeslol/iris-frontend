@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTX-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Iris Test mode </title>
+    <script src = "https://cdn.tailwindcss.com"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel = "stylesheet" href = "test.css" />
+</head>
+
+<body
+    class="bg-gradient-to-b from-[#0a0a15] to-[#1a1035] text-gray-200">
+
+    <div class="max-w-3x1 mx-auto mt-12 p-8 rounded-3x1 glass shadow-2x1">
+
+        <h1 class="text-center text-3x1 font-bold text-purple-300 mb-3">
+            Test Mode
+        </h1>
+        <p class="text-center opacity-70 mb-8">
+            Generate random values and try to guess the flower before the results show up.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6 mb-8">
+            <div>
+                <label class="label">Sepal Length (cm)</label>
+                <input id="sl" class="input" readonly>
+            </div>
+
+            <div>
+                <label class="label">Sepal Width (cm)</label>
+                <input id="sw" class="input" readonly>
+            </div>
+
+            <div>
+                <label class="label">Petal Length (cm)</label>
+                <input id="pl" class="input" readonly>
+            </div>
+
+            <div>
+                <label class="label">Petal Width (cm)</label>
+                <input id="pw" class="input" readonly>
+            </div>
+        </div>
+
+        <div class = "flex justify-between mb-8">
+            <button onclick = "randomGenerate()" class="btn-random"> Random </button>
+            <button onclick="predictTest()" class="btn-predict"> Predict </button>
+        </div>
+
+        <div id="test-result" class="text-center text-xl font-semibold mt-6 mb-4"></div>
+
+        <div class="bg-[#ffffff08] backdrop-blur-md p-5 rounded-2x1 border border-white-10">
+            <canvas id="testChart"></canvas>
+        </div>
+
+        <div class="text-right mt-6">
+            <a href="index.html" class="back-btn"> ← Back to main </a>
+        </div>
+    </div>
+
+    <script src="test.js" defer></script>
+
+</body>
+</html>

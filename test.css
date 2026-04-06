@@ -1,0 +1,63 @@
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(14px);
+}
+
+
+.label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.input{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-random{
+    background: linear-gradient(135deg, #ff4fd8, #9645ff);
+    padding: 12px 25px;
+    border-radius: 14px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-random:hover{
+    transform: scale(1.08) rotate(-1deg);
+    box-shadow: 0 0 25px #c47aff;
+}
+
+.btn-predict{
+    background: linear-gradient(135deg, #4f7aff, #48eaff);
+    padding: 12px 25px;
+    border-radius: 14px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-predict:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #6be4ff;
+}
+
+.back-btn{
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.back-btn:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-3px);
+}

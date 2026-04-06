@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="title">Iris Classifier</h1>
+        <p class="subtitle">
+            Enter measurements and the AI will classify the flower and explain why.
+        </p>
+
+        <div class="grid">
+            <input id="sepal_length" class="input" placeholder="Sepal Length (cm)">
+            <input id="sepal_width" class="input" placeholder="Sepal Width (cm)">
+            <input id="petal_length" class="input" placeholder="Petal Length (cm)">
+            <input id="petal_width" class="input" placeholder="Petal Width (cm)">
+        </div>
+
+        <button onclick="predict()" class="btn">Predict</button>
+
+        <p id="result" class="result"></p>
+
+        <div class="section-title">Prediction probabilities</div>
+        <canvas id="probChart"></canvas>
+
+        <div class="section-title">Why this prediction?</div>
+        <canvas id="importanceChart"></canvas>
+
+        <div class="explanation-box" id="explanation">
+            The model will explain which features influenced this prediction the most.
+        </div>
+
+        <div class = "test-btn-wrapper"> 
+            <a href ="test.html" class="test-btn">
+                Play Test Mode
+                <span class = "arrow">→</span>
+            </a>
+        </div>
+
+        <footer class="footer">
+            Iris classifier · PyTorch · FastAPI · Chart.js
+        </footer>
+
+    </div>
+</body>
+</html>
